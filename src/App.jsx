@@ -15,8 +15,6 @@ import Partners from './Components/Partners/Partners'
 import Footer from './Components/Footer/Footer'
 import Popup from './Components/Popup/Popup'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import the AOS styles
 
 const BannerData = {
   discount:'30% OFF',
@@ -50,15 +48,7 @@ const App = () => {
     setOrderPopup(!orderPopup)
   }
 
-  React.useEffect(()=>{
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-sine',
-      delay:100,
-      offset:100,
-    });
-    AOS.refresh();
-  },[]);
+
 
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white
